@@ -41,14 +41,14 @@ public class ThreadCorredor extends Thread {
             System.out.println("A pessoa #" + idPessoa + " andou " + distanciaPercorrida + " m.");
         }
         posicaoChegada++;
-        System.out.println("A pessoa #" + idPessoa + " foi a " + posicaoChegada + "ª a chegar");
+        System.out.println("A pessoa #" + idPessoa + " foi a " + posicaoChegada + "Âª a chegar");
     }
  
     private void AbrindoPorta() {
-        System.out.println("A pessoa #" + idPessoa + " abriu e cruzou a porta.");
         int tempo = (int) ((Math.random() * 1000) + 1000);
         try {
             sleep(tempo);
+            System.out.println("A pessoa #" + idPessoa + " abriu e cruzou a porta.");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
